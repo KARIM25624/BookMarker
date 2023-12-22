@@ -99,7 +99,7 @@ function searchSite(){
 var messageName = document.getElementById("messageName");
 function validationName(){
     var text = siteBookName.value;
-    var regexName = /^([a-z]|[أ-ي]){4,8}$/;
+    var regexName = /^([a-z]|[أ-ي]){4,15}$/;
     ;
     if(regexName.test(text) == true){
         siteBookName.classList.add("is-valid");
