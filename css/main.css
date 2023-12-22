@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../imgs/72a184aa7846cad0d5a82cf55dc3f406.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* main{
+        min-height: 100vh;
+            background-color: #f7ecde;
+} */
+main h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+main h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation:isolate;
+}
+main h1:hover::before{
+    height: 50%;
+}
+.book-body{
+    border-width: 3px 0 3px 0;
+        border-style: dotted;
+        border-color: #352e28;
+}
+.book-body h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fonts{
+    font-weight: 700;
+}
+.btn-danger{
+    --bs-btn-color: #fff;
+        --bs-btn-bg: #d1512d;
+        --bs-btn-border-color: #d1512d;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #bb4120;
+        --bs-btn-hover-border-color: #a03315;
+        --bs-btn-focus-shadow-rgb: 225, 83, 97;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #bb4120;
+        --bs-btn-active-border-color: #a03315;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #bb4120;
+        --bs-btn-disabled-border-color: #bb4120;
+}
+.btn-visit {
+    
+    --bs-btn-color: #95b109;
+    /* --bs-btn-bg: ; */
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+table thead{
+    color: #1c1c1c;
+}
+table tbody{
+    color: whitesmoke;
+}
+#t-Body .btn-visit a{
+text-decoration: none;
+color: #586809;
+}
+#t-Body .btn-visit:hover a{
+text-decoration: none;
+color: white;
+}
+.btn-delete {
+    --bs-btn-color: #f50521;
+    /* --bs-btn-bg: ; */
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+.sites{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.9);
+    
+}
+
+.alert p{
+    font-size: 21px;
+        line-height: 1.3;
+        color: #352e28;
+        font-family: cursive;
+}

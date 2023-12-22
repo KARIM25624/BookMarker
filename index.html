@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter&family=Kanit&family=Open+Sans:wght@300;400&family=Pacifico&family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookmarker</title>
+</head>
+<body>
+    <main class="py-5 position-relative">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="position-relative py-2">
+            Bookmarker
+        </h1>
+        
+        <div class="book-body w-100 p-3 py-4 mt-4  d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                 Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="s-name w-100 d-flex flex-column justify-content-center">
+            <label for="siteBookName" class="pb-2 fonts"> 
+                <i class=" fa-solid fa-book-bookmark pe-2"></i>
+                Site Name
+            </label>
+            <input type="text" oninput="validationName()" id="siteBookName" placeholder="Book Mark Name" class="form-control">
+        
+            <div id="messageName" class="alert alert-warning d-none">
+                <p>Site Name Must contain at least 3 characters</p>
+            </div>
+        
+        </div>
+        <div class="s-url w-100 d-flex flex-column justify-content-center">
+            <label for="siteBookUrl" class="pb-2 fonts">
+                <i class=" fa-solid fa-link pe-2"></i>
+                Site URL
+            </label>
+            <input type="text" oninput="validationUrl()" id="siteBookUrl" placeholder="Book Mark Url" class="form-control">
+
+            <div id="messageUrl" class="alert alert-warning d-none">
+                <p>Sorry Url must be Valid</p>
+                <p>ex: https://abc.com</p>
+            </div>
+        </div>
+        <button onclick="addSite()" class=" btn btn-danger  px-4" id="submitBtn"> Submit</button>
+        
+    </div>
+        <input id="searchInput" oninput="searchSite()" type="search" class="form-control my-2 w-25 ms-auto" placeholder="Search By Name">
+
+       <table class="table-responsive  text-center  mt-4 sites w-100 rounded-3">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="t-Body">
+                
+            </tbody>
+        </table>
+        
+        
+        </div>
+    
+
+        
+        
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
